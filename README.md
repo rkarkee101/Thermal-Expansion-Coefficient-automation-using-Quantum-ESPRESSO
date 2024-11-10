@@ -19,9 +19,10 @@ You can edit the name of .in and .out file (in this example, it is wse2) as per 
 For example:
 wse2-$i.in can be changed to  your_file_name-$i.in
 
-wse2-$i.in &> wse2-$i.out  can be changed to  your_file_name-$i.in &> your_file_name-$i.ou
+wse2-$i.in &> wse2-$i.out  can be changed to  your_file_name-$i.in &> your_file_name-$i.out
 
 ### postprocess.bash
+Line 29: If you changed the name of files in job_phon, you can edit it here. For example, wse2-$i.out changes to your_file_name-$i.out
 
 
 
