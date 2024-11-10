@@ -1,0 +1,7 @@
+
+Lmod is automatically replacing "cce/17.0.0" with "intel/2023.2.0".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) cray-libsci/23.12.5     2) cray-mpich/8.1.28     3) lanlpe/23-05
+

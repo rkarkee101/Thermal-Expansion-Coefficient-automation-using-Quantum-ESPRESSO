@@ -1,0 +1,53 @@
+&CONTROL
+    calculation = 'relax'
+    pseudo_dir  = '/users/rkarkee/pbe_pseudo'
+        outdir       = './'
+        prefix = 'WSe'
+        tprnfor = .true.
+    tstress = .true.
+/
+
+&SYSTEM
+    ecutwfc     =  80,
+    ibrav       = 0,
+    nat         = 6,
+    ntyp        = 2,
+    vdw_corr    = 'Grimme-D2'
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-10
+    electron_maxstep = 200
+    mixing_beta      =  0.5
+    diagonalization  = "david"
+
+
+/
+&IONS
+ion_dynamics='fire'
+/
+&CELL
+press_conv_thr=0.01
+/
+
+K_POINTS {automatic}
+6 6 2 1 1 1
+ 
+
+ATOMIC_SPECIES
+W  183.84  W.upf
+Se 78.96  Se.upf
+
+
+
+CELL_PARAMETERS (angstrom)
+3.23098132163   0.0   0.0
+-1.61549065936   2.79811190456   0.0
+0.0   0.0   12.385161466089999
+ATOMIC_POSITIONS (crystal)
+W                0.3333333430        0.6666666870        0.7500000000
+W                0.6666666270        0.3333333130        0.2500000000
+Se               0.3333333430        0.6666666870        0.1135993734
+Se               0.6666666270        0.3333333130        0.8864006336
+Se               0.6666666270        0.3333333130        0.6135993664
+Se               0.3333333430        0.6666666870        0.3864006336

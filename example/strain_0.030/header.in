@@ -1,0 +1,29 @@
+&CONTROL
+    calculation = 'scf'
+    pseudo_dir  = '/users/rkarkee/pbe_pseudo'
+        outdir       = './'
+        prefix = 'WSe'
+        tprnfor = .true.
+    tstress = .true.
+/
+
+&SYSTEM
+    ecutwfc     =  80,
+    ibrav       = 0,
+    nat         = 54,
+    ntyp        = 2,
+    vdw_corr    = 'Grimme-D2'
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-10
+    electron_maxstep = 200
+    mixing_beta      =  0.5
+    diagonalization  = "david"
+
+/
+
+K_POINTS {automatic}
+2 2 2 1 1 1
+ 
+
