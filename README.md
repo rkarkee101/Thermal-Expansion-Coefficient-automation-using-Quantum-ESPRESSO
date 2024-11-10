@@ -15,7 +15,10 @@ Line 26: Update your desired strain. For example, uniaxial along x would be ([[E
 Line 121: Update desired phonopy supercell dimension.
 
 ### job_phon
-You can edit the name of .in and .out file (in this example, it is wse2) as per your project of interest.
+You can edit the name of .in and .out file (in this example, it is wse2) as per your project of interest. 
+For example:
+wse2-$i.in can be changed to  your_file_name-$i.in
+wse2-$i.in &> wse2-$i.out  can be changed to  your_file_name-$i.in &> your_file_name-$i.ou
 
 ### postprocess.bash
 
