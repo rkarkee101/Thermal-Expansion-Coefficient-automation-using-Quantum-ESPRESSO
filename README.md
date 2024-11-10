@@ -21,8 +21,19 @@ wse2-$i.in can be changed to  your_file_name-$i.in
 
 wse2-$i.in &> wse2-$i.out  can be changed to  your_file_name-$i.in &> your_file_name-$i.out
 
+
 ### postprocess.bash
 Line 29: If you changed the name of files in job_phon, you can edit it here. For example, wse2-$i.out changes to your_file_name-$i.out
 
+
+## Running the code
+If you're running your job on HPC, use job_preprocess as job script reference. This depends on your HPC. Then, submit job_preprocess. You can see the progress on results_preprocess.log
+
+Once job_preprocess completes successfully, then you can run
+
+```bash postprocess.bash```
+
+After postprocess.bash runs successfully, you can go to thermal_properties folder and run
+```phonopy-qha e-v.dat thermal_properties.yaml-{-{5..1},{0..5}}```
 
 
