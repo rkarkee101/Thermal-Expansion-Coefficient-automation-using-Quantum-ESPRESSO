@@ -34,6 +34,6 @@ Once job_preprocess completes successfully, then you can run
 ```bash postprocess.bash```
 
 After postprocess.bash runs successfully, you can go to thermal_properties folder and run
-```phonopy-qha e-v.dat thermal_properties.yaml-{-{5..1},{0..5}}```
+```phonopy-qha e-v.dat thermal_properties.yaml-{-{3..1},{0..3}}``` You can edit numbers based on your results.
 
 
