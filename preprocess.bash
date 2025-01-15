@@ -55,6 +55,8 @@ for row in new_cell:
 
     # Append the new cell parameters directly to scf.in
     {
+        echo " "
+        echo " "
         echo "CELL_PARAMETERS (angstrom)"
         echo "$strained_cell_params"
     } >> "$folder_name/scf.in"
